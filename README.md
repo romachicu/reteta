@@ -1,27 +1,69 @@
-# HTML, CSS, JS (Auto Refresh)
+# Reteta de preparare a Paste Carbonara HTML 
 
-This template is a starter for building a website with HTML, CSS and JS, powered by [Vite](https://vitejs.dev/). HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
+1. Crearea titlul de pagina
+   ```html
+   <title>Paste Carbonara</title>
+   ```
+3. Adagarea imaginei
+   ```html
+    <img src="image/spaghetti-carbonara.png" alt="Paste Carbonara">
+    ```
+   
+4. Adaugarea  ingredientelor sub forma de lista
+   ```html
+   <section>
+       <h2>Ingrediente necesare</h2>
+       <ul>
+           <li>200 g paste (spaghetti)</li>
+           <li>100 g pancetta sau bacon</li>
+           <li>2 ouă</li>
+           <li>50 g parmezan ras</li>
+           <li>2 căței de usturoi</li>
+           <li>2 linguri de ulei de măsline</li>
+           <li>un praf de sare</li>
+           <li>piper negru proaspăt măcinat</li>
+       </ul>
+   </section>
+   ```
+5. Adugarea unei forme:
+   ```html
+   <section>
+       <h2>Lasă un comentariu</h2>
+       <form>
+           <label for="name">Nume:</label>
+           <input type="text" id="name" name="name" required>
+           <label for="comment">Comentariu:</label>
+           <textarea id="comment" name="comment" rows="5" cols="30" required></textarea>
+           <button type="submit">Trimite</button>
+       </form>
+   </section>
+   ```
+   
+   
+## Informatii nutritionale 
 
-Hit run to see this project in action. It will auto-refresh as you edit the HTML, CSS and JS files.
+Utilizarea unui tabel pentru afisarea estetica a valori nutritionale ale acestei retete
 
-## Disable Auto Refresh
-
-If you find the auto refresh getting in your way, go to [vite.config.js](./vite.config.js) and update it set `hmr` to false to disable hot module reloading (HMR). The full config will look like this:
-
-```js
-export default defineConfig({
-  plugins: [],
-  server: {
-    host: '0.0.0.0',
-    hmr: false, // Change this line to `false` disable auto-refreshing.
-  }
-})
+```html
+    <section> 
+        <h2>Informații nutriționale</h2>
+        <table border="1">
+            <tr>
+                <th>Calorii</th>
+                <td>450kcal</td>
+            </tr>
+            <tr>
+                <th>Glucide</th>
+                <td>60g</td>
+            </tr>
+            <tr>
+                <th>Proteine</th>
+                <td>20g</td>
+            </tr>
+            <tr>
+                <th>Grăsimi</th>
+                <td>15g</td>
+            </tr>
+        </table>
+    </section>
 ```
-
-## Packages
-
-Because this template uses Vite to build your code, you can add install and use npm packages. Simple open the Packager tool to search and manage your packages.
-
-## Learn More
-
-Check out [the vite docs](https://vitejs.dev) to learn more about configuring a frontend application.# reteta
